@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#7CCEF3"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/formDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form đăng nhập"
+        android:textColor="#FFEF66"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="32dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="376dp"
+        android:layout_height="376dp"
+        android:elevation="12dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/formDangNhap"
+        app:layout_constraintVertical_bias="0.046"
+        tools:layout_editor_absoluteX="16dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:background="@drawable/texviewcustom"
+                android:drawableStart="@drawable/user"
+                android:id="@+id/Name"
+                android:layout_width="269dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="56dp"
+                android:ems="10"
+                android:paddingLeft="10dp"
+                android:hint="Name"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:background="@drawable/texviewcustom"
+                android:id="@+id/Password"
+                android:paddingLeft="10dp"
+                android:layout_width="269dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="32dp"
+                android:ems="10"
+                android:drawableStart="@drawable/password"
+                android:hint="password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/Name"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/Name"
+                app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+            <Button
+                android:background="@drawable/button_custom"
+                android:id="@+id/button"
+                android:layout_width="128dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="24dp"
+                android:text="Đăng nhập"
+                app:layout_constraintStart_toStartOf="@+id/Password"
+                app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+            <Button
+                android:background="@drawable/button_custom"
+                android:id="@+id/button2"
+                android:layout_width="114dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="24dp"
+                android:text="Hủy"
+                app:layout_constraintEnd_toEndOf="@+id/Password"
+                app:layout_constraintHorizontal_bias="0.87"
+                app:layout_constraintStart_toEndOf="@+id/button"
+                app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+            <TextView
+                android:id="@+id/fotgotpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgot password"
+                app:layout_constraintEnd_toEndOf="@+id/Password"
+                app:layout_constraintTop_toBottomOf="@+id/Password" />
+
+            <TextView
+                android:id="@+id/createaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="124dp"
+                android:text="create new account"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Password" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

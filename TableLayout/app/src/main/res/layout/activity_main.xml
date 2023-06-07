@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:stretchColumns="*"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow>
+        <TextView
+            android:textSize="40sp"
+            android:layout_span="3"
+            android:textColor="#DF004C"
+            android:text="Anh yêu em"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textColor="#C20FE1"
+            android:textSize="20sp"
+            android:text="1"/>
+        <TextView
+            android:textColor="#C20FE1"
+            android:textSize="20sp"
+            android:text="2"/>
+        <TextView
+            android:textColor="#C20FE1"
+            android:textSize="20sp"
+            android:text="3"/>
+    </TableRow>
+</TableLayout>

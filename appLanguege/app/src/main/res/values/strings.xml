@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">appLanguege</string>
+    <string name="txt_thongtin">Information Form</string>
+    <string name="hint_ten">Input name</string>
+    <string name="hint_email">Input email</string>
+    <string name="hint_sdt">Input phone number</string>
+    <string name="button">Confirm</string>
+</resources>

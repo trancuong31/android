@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">appLanguege</string>
+    <string name="txt_thongtin">Phiếu thông tin</string>
+    <string name="hint_ten">Nhập họ tên</string>
+    <string name="hint_email">Nhập email</string>
+    <string name="hint_sdt">Nhập số điện thoại</string>
+    <string name="button">Xác nhận</string>
+</resources>
