@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +39,7 @@ public class hinhanhadapter extends BaseAdapter {
     }
     private class hoderView{
         ImageView img;
+        TextView name;
     }
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -47,6 +49,7 @@ public class hinhanhadapter extends BaseAdapter {
             LayoutInflater inflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView=inflater.inflate(layout,null);
             hoder.img=(ImageView) convertView.findViewById(R.id.img);
+            hoder.name=convertView.findViewById(R.id.name);
             convertView.setTag(hoder);
         }
         else{
@@ -54,6 +57,7 @@ public class hinhanhadapter extends BaseAdapter {
         }
         hinhAnh hinhAnh=listHinhAnh.get(position);
         hoder.img.setImageResource(hinhAnh.getImg());
+        hoder.name.setText(hinhAnh.getTen());
         return convertView;
     }
 }

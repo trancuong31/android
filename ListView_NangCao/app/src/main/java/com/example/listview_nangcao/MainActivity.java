@@ -14,13 +14,13 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     ListView listView;
     List<CaSi> caSiList;
-    TraiCayadapter traiCayadapter;
+    CaSiAdapter traiCayadapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         anhXa();
-        traiCayadapter=new TraiCayadapter(caSiList,this,R.layout.dong_casi);
+        traiCayadapter=new CaSiAdapter(caSiList,this,R.layout.dong_casi);
         listView.setAdapter(traiCayadapter);
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
@@ -35,6 +35,21 @@ public class MainActivity extends AppCompatActivity {
     public void anhXa(){
         listView=(ListView) findViewById(R.id.listView);
         caSiList=new ArrayList<>();
+        caSiList.add(new CaSi("Sơn Tùng","Đẹp trai,tài giỏi",R.drawable.sontung));
+        caSiList.add(new CaSi("Jack","Đẹp trai, giỏi",R.drawable.jack));
+        caSiList.add(new CaSi("Mỹ Tâm","tài giỏi",R.drawable.mytam));
+        caSiList.add(new CaSi("IU","Xinh,tài giỏi",R.drawable.iu));
+        caSiList.add(new CaSi("AMee","Xinh,tài giỏi",R.drawable.amee));
+        caSiList.add(new CaSi("Sơn Tùng","Đẹp trai,tài giỏi",R.drawable.sontung));
+        caSiList.add(new CaSi("Jack","Đẹp trai, giỏi",R.drawable.jack));
+        caSiList.add(new CaSi("Mỹ Tâm","tài giỏi",R.drawable.mytam));
+        caSiList.add(new CaSi("IU","Xinh,tài giỏi",R.drawable.iu));
+        caSiList.add(new CaSi("AMee","Xinh,tài giỏi",R.drawable.amee));
+        caSiList.add(new CaSi("Sơn Tùng","Đẹp trai,tài giỏi",R.drawable.sontung));
+        caSiList.add(new CaSi("Jack","Đẹp trai, giỏi",R.drawable.jack));
+        caSiList.add(new CaSi("Mỹ Tâm","tài giỏi",R.drawable.mytam));
+        caSiList.add(new CaSi("IU","Xinh,tài giỏi",R.drawable.iu));
+        caSiList.add(new CaSi("AMee","Xinh,tài giỏi",R.drawable.amee));
         caSiList.add(new CaSi("Sơn Tùng","Đẹp trai,tài giỏi",R.drawable.sontung));
         caSiList.add(new CaSi("Jack","Đẹp trai, giỏi",R.drawable.jack));
         caSiList.add(new CaSi("Mỹ Tâm","tài giỏi",R.drawable.mytam));

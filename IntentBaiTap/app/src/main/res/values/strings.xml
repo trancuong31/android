@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Intent Bai Tap</string>
+    <string-array name="listname">
+        <item>hinh1</item>
+        <item>hinh2</item>
+        <item>hinh3</item>
+        <item>hinh4</item>
+        <item>hinh5</item>
+        <item>hinh6</item>
+        <item>hinh7</item>
+        <item>hinh8</item>
+    </string-array>
+</resources>
